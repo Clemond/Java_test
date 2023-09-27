@@ -1,10 +1,14 @@
 import java.io.Console;
 import java.util.Scanner;
+import java.util.Random;
 
 public class Hello{
     public static void main(String[] args){
 
-        int rightAnswer = 10;
+        //Siffer genererare
+        Random sifferGenererare = new Random();
+        int rightAnswer = 1+sifferGenererare.nextInt(100);
+        //Scanner för vad användaren skriver in med tangentbordet
         Scanner myScanner = new Scanner(System.in);
 
         while(true){
@@ -22,5 +26,4 @@ public class Hello{
             }
         }
     }
-
 }
